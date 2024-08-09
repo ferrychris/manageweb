@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Manage your Projects in one Go" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+  
+  </head>
+
+
+  <body class="bg-white">
+   
+    <!-- Navbar -->
+    <nav class="container mx-auto p-6 bg-white">
+      <!-- Flex Container -->
+      <div class="hidden md:flex items-center justify-between flex-wrap">
+        <!-- Logo -->
+        <div class="md:mt-[10px]">
+          <img src="./images/logo.svg" alt="" class="mt-2" />
+        </div>
+        <div class="hidden md:flex space-x-[60px] flex-wrap">
+          <a href="#" class="hover:text-orange-500">Pricing</a>
+          <a href="#" class="hover:text-orange-500">About Us</a>
+          <a href="#" class="hover:text-orange-500">Products</a>
+          <a href="#" class="hover:text-orange-500">Login</a>
+        </div>
+        <div class="flex justify-center items-center md:justify-start md:items-end md:flex-row">
+          <button id="newsh"  onclick=Try()
+            class="text-white text-bold justify-center bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile View -->
+    <nav class="bg-white">
+      <div class="flex space-x-[220px] fixed z-999 h-[100vh] md:hidden">
+        <div class="mt-[-20px] ml-[20px] fixed">
+          <img src="./images/logo.svg" alt="" class="mt-2" />
+        </div>
+        <!-- Menu Section -->
+        <div class="mt-[-10px] ">
+          <div class="ml-[80px] ">
+            <img src="./images/icon-hamburger.svg" alt="" class="w-[30px] " id="open" >           
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Mobile Nav Showing -->
+    <div class=" pt-[50px] pl-[10px] z-1 h-full top-0 left-0 w-[250px]  flex flex-col items-center bg-[#0f0101] text-white mt-[10px] fixed z-1 " id="navmenu">
+      <div class="flex flex-col space-y-6">
+        
+        <img src="./images/icon-close.svg" alt="" class="w-[30px] ml-[180px] mt-[-30px]" id="close"/>
+         <a href="#" class="hover:text-orange-500 border-b-[3px] ">Pricing</a>
+      <a href="#" class="hover:text-orange-500 border-b-[3px]">About Us</a>
+      <a href="#" class="hover:text-orange-500 border-b-[3px]">Products</a>
+      <a href="#" class="hover:text-orange-500 border-b-[3px]">Login</a>
+      </div>
+   
+    </div>
+    <!-- HEader Ending -->
+    <!-- Hero Section -->
+    <div class="flex justify-end items-end" >
+      <img
+        src="./images/bg-tablet-pattern.svg"
+        class=" ml-[40px] w-[80%] mt-[10px] md:ml-[560px] md:w-[550px] absolute top-0 left-0 -z-10"
+      />
+    </div>
+    
+    <section
+      class="sm:space-x-[20px] relative flex flex-col-reverse md:flex-row items-center justify-center md:space-x-[120px] mt-[30px] px-[65px] -z-10"
+    >
+   
+      <div class="z-[-20]">
+        <div class="space-y-[40px] items-center container">
+          <p class="text-center text-[30px] md:text-start md:text-[40px] font-bold leading-[40px]">
+            Bring Everyone together to build Better Products.
+          </p>
+          <p class="justify-center text-center  text-gray-600 md:text-start">
+            Manage makes simple for software to plan day to day activities and
+            increase activeness
+          </p>
+          <div class="flex justify-center items-center md:justify-start md:items-end md:flex-row">
+            <button
+              class="text-white text-bold justify-center bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img
+          src="./images/illustration-intro.svg"
+          class="sm:mr-[200px] md:w-[690px]"
+        />
+      </div>
+    </section>
+
+    <!-- Whats different about Manage -->
+     
+    <section>
+      <div
+        class="space-y-[30px] flex flex-col md:flex-row items-center justify-center md:space-x-[120px] mt-[60px] px-[65px]"
+      >
+        <div class="space-y-[40px]">
+          <p
+            class="text-center text-[30px] font-bold leading-[30px] md:text-start"
+          >
+            What's different about Manage?
+          </p>
+          <p class="sm:text-center md:text-start">
+            Manage Provides all with functionalities your team needs without
+            missing out on anything. Proper arrangement of schedules and Task to
+            improve delivery.
+          </p>
+        </div>
+
+        <div class="space-y-[20px]">
+          <div class="flex space-x-[30px]">
+            <div>
+              <button
+                class="text-white text-bold justify-center bg-orange-500 px-6 py-2 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+              >
+                1
+              </button>
+            </div>
+            <div>
+              <p>
+                Track company-wide progress See how your day-to-day tasks fit
+                into the wider vision. Go from tracking progress at the
+                milestone level all the way done to the smallest of details.
+                Never lose sight of the bigger picture again.
+              </p>
+            </div>
+          </div>
+          <!-- Numb2 -->
+          <div class="flex space-x-[30px]">
+            <div>
+              <button
+                class="text-white text-bold justify-center bg-orange-500 px-6 py-2 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+              >
+                2
+              </button>
+            </div>
+            <div>
+              <p>
+                Advanced built-in reports Set internal delivery estimates and
+                track progress toward company goals. Our customisable dashboard
+                helps you build out the reports you need to keep key
+                stakeholders informed.
+              </p>
+            </div>
+          </div>
+          <!-- Numr3 -->
+          <div class="flex space-x-[30px]">
+            <div>
+              <button
+                class="text-white text-bold justify-center bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+              >
+                3
+              </button>
+            </div>
+            <div>
+              <p>
+                Everything you need in one place Stop jumping from one service
+                to another to communicate, store files, track tasks and share
+                documents. Manage offers an all-in-one team productivity
+                solution.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="py-[60px] px-[65px]">
+      <div class="text-center">
+        <p class="text-center text-[30px] font-bold leading-[30px]">
+          What they've Said
+        </p>
+      </div>
+
+      <div class="swiper" width="600px" ; height="300px" ;>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <section class="bg-white ">
+              <div
+                class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6"
+              >
+                <figure class="max-w-screen-md mx-auto">
+                  <svg
+                    class="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+                    viewBox="0 0 24 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                  <blockquote>
+                    <p
+                      class="text-2xl font-medium"
+                    >
+                      "Manage is just awesome. It contains tons of Tools
+                      components and pages starting from Task management screen to
+                       complex management. Perfect choice for your next SaaS application."
+                    </p>
+                  </blockquote>
+                  <figcaption
+                    class="flex items-center justify-center mt-6 space-x-3"
+                  >
+                    <img
+                      class="w-6 h-6 rounded-full"
+                      src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png"
+                      alt="profile picture"
+                    />
+                    <div
+                      class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700"
+                    >
+                      <div
+                        class="pr-3 font-medium text-gray-900 dark:text-white"
+                      >
+                        Micheal Gough
+                      </div>
+                      <div
+                        class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400"
+                      >
+                        CEO at Google
+                      </div>
+                    </div>
+                  </figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+          <!-- Test 2 -->
+          
+              </div>
+            </section>
+          </div>
+          <!-- Testimonial 3 -->
+          
+                  
+      </div>
+      <div class="flex justify-center items-center">
+        <button
+          class="text-white flex text-bold justify-center bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <section
+      class="bg-orange-500 py-[60px] mt-[30px] md:space-x-[560px] "
+    >
+      <div class=" flex justify-center text-center items-center md:w-[500px] ">
+        <p class="text-center text-[30px] md:text-[40px] font-bold leading-[40px]  text-white">
+          Simplify how your team works today.
+        </p>
+      </div>
+
+      <div class="mt-[20px] flex justify-center items-center md:mt-[-50px]">
+        <button
+          class="text-white  text-bold bg-blue-950 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
+    <!-- Footer Section -->
+     <section class="bg-blue-950 py-[60px] md:hidden">
+      <div class="flex justify-center items-center">
+        <form action="" class="flex md:flex-row ">
+          <div id="">
+            <input type="text" class="rounded-full active:border-green-600  md:w-[260px]" >
+          </div>
+          
+          <div class="">
+            <button
+            class="text-white  text-bold bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+          >
+            Go
+          </button>
+          </div>
+        </form>
+        
+      </div>
+      <!-- Footer Nav -->
+      <div class="text-white flex space-x-[40px] items-center justify-center mt-[30px]">
+        <div class="flex flex-col">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+
+        <div class="flex flex-col">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+      <!-- Social Icons -->
+       <div class="flex justify-center mt-[20px] space-x-[20px]">
+        <img src="./images/icon-facebook.svg" alt="" class="">
+        <img src="./images/icon-instagram.svg" alt="">
+        <img src="./images/icon-pinterest.svg" alt="">
+        <img src="./images/icon-twitter.svg" alt="">
+       </div>
+       <!-- Logo -->
+        <div class="flex justify-center text center mt-[30px]">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="text-center bottom-0 top-0">
+          <p class="text-white">Copyright 2020. All Rights Reserved</p>
+        </div>
+     </section>
+     <!-- Desktop View  -->
+     <section class=" bg-blue-950 pt-[60px] pb-[10px]">
+      <div class="hidden mx-[60px] space-x-[250px] md:flex">
+
+      
+      <!-- Footer Nav -->
+       <!-- Social Icons $ Logo-->
+       <div>
+        <div class="flex justify-center text center mt-[30px]">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <div class="flex justify-center mt-[20px] space-x-[20px]">
+          <img src="./images/icon-facebook.svg" alt="" class="">
+          <img src="./images/icon-instagram.svg" alt="">
+          <img src="./images/icon-pinterest.svg" alt="">
+          <img src="./images/icon-twitter.svg" alt="">
+         </div>
+
+       </div>
+      
+      <div class="text-white flex space-x-[60px] items-center justify-center mt-[30px]">
+        <div class="flex flex-col ">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+
+        <div class="flex flex-col">
+          <a href="#">Home</a>
+          <a href="#">Pricing</a>
+          <a href="#">Products</a>
+          <a href="#">About Us</a>
+        </div>
+      </div>
+      
+       
+       <!-- Logo -->
+        <div class="space-y-[60px]">
+          <div class="flex justify-center items-center ">
+            <form action="" class="flex md:flex-row space-x-[20px] ">
+              <div id="">
+                <input type="text" class="rounded-full active:border-green-600  md:w-[260px]" >
+              </div>
+              
+              <div class="">
+                <button
+                class="text-white  text-bold bg-orange-500 px-6 py-3 rounded-[30px] hover:bg-orange-200 active:bg-navyblue focus:bg-white"
+              >
+                Go
+              </button>
+              </div>
+            </form>
+            
+          </div>
+          <div class="text-center bottom-0 top-0">
+            <p class="text-white">Copyright 2020. All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+     </section>
+     <!-- Script Tagfs -->
+         <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./homepage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+
+  
+</html>
